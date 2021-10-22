@@ -86,27 +86,7 @@ public class ContactoMPadapter extends RecyclerView.Adapter<ContactoMPadapter.Vi
 
             this.context=context;
 
-            //enlazando
-            //  btnModificar.setOnClickListener(this);
-            //  btnEliminar.setOnClickListener(this);
         }
-
-
-       /* @Override
-        public void onClick(View view) {
-            switch (view.getId()){
-                case R.id.btnEliminar:
-                        Toast.makeText(view.getContext(),"Tarea: "+txtTarea.getText(),Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.btnModificar:
-                    Intent intent = new Intent(view.getContext(), NuevaTareaActivity.class);
-                    intent.putExtra("estado",1);
-                    view.getContext().startActivity(intent);
-
-                    break;
-
-            }
-        }*/
     }
 
     public ContactoMPadapter(List<ContactoMP> contacts, Context context, ContactoMPDAO dao) {

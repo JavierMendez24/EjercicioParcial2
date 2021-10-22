@@ -27,7 +27,8 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="44dp"
         android:onClick="IrActualizar"
-        android:text="Actualizar Propietario"
+        android:text="Actualizar al Propietario"
+        android:backgroundTint="@color/blue"
         app:layout_constraintStart_toEndOf="@+id/Bienvenida"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,7 +59,7 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:clickable="true"
-        android:backgroundTint="@color/teal_700"
+        android:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_input_add" />

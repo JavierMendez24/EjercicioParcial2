@@ -27,7 +27,6 @@ public class MainActivityMP extends AppCompatActivity {
     String nombre= null;
     String numero=null;
     TextView Bienvenida;
-    Button Actualziar;
 
     FloatingActionButton btnNuevaTarea;
     RecyclerView rwTareas;
@@ -57,7 +56,6 @@ public class MainActivityMP extends AppCompatActivity {
 
                 dao=new ContactoMPDAOImpRoom(getApplicationContext());
 
-                //instancias a componentes graficos
                 this.btnNuevaTarea=(FloatingActionButton) findViewById(R.id.btnNuevaTarea);
                 this.rwTareas=(RecyclerView) findViewById(R.id.rwTareas);
 
@@ -71,16 +69,12 @@ public class MainActivityMP extends AppCompatActivity {
                     }
                 });
 
-                //cargando datos
                 this.cargarDatos();
 
-                //configurando recyclerview
-                //instancia del adaptador
                 ContactoMPadapter adapter=new ContactoMPadapter(this.tareas,getApplicationContext(),dao);
 
                 rwTareas.setLayoutManager(new LinearLayoutManager(this));
 
-                //config del adaptador
                 rwTareas.setAdapter(adapter);
             }
         }catch(Exception e){

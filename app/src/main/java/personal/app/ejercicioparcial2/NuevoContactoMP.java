@@ -32,7 +32,6 @@ public class NuevoContactoMP extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("Configuracion", MODE_PRIVATE);
         estado=0;
 
-        //instancias a los componentes graficos
         this.txtNombre=(TextView) findViewById(R.id.txtNOMBRE);
         this.txtNumero=(TextView) findViewById(R.id.txtNUMERO);
         this.btnRegresar=(Button) findViewById(R.id.btnRegresar);
@@ -45,7 +44,6 @@ public class NuevoContactoMP extends AppCompatActivity {
 
         cargar();
 
-        //eventos
         btnRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
